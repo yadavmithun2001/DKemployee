@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/sentmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/sendmessage_back"
+        android:fontFamily="@font/noto_sans_bold"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="20dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingStart="20dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:maxWidth="200dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pfimage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/img"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sentmessage"
+        app:layout_constraintEnd_toEndOf="@+id/sentmessage"
+        app:layout_constraintTop_toBottomOf="@+id/sentmessage" />
+
+    <TextView
+        android:id="@+id/send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="17:00 PM"
+        android:textColor="#606060"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/pfimage"
+        app:layout_constraintTop_toBottomOf="@+id/sentmessage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
